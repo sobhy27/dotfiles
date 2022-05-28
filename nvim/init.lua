@@ -82,6 +82,8 @@ require("packer").startup(function()
 
     use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 
+    use("b0o/SchemaStore.nvim")
+
     -- prettier
     use({ "prettier/vim-prettier",
         run = "yarn install --frozen-lockfile --production",
