@@ -13,6 +13,7 @@ require("lspconfig").jsonls.setup {
 }
 
 require("lspconfig").tsserver.setup({
+    capabilities = capabilities,
     on_attach = function (client, bufnr)
         client.server_capabilities.document_formatting = false
         client.server_capabilities.documentFormattingProvider = false
