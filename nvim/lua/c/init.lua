@@ -1,4 +1,5 @@
 require("c.debug")
+require("c.cmake")
 local inlay_hints = require("c.inlay_hints")
 
 local function mk_handler(fn)

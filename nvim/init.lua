@@ -82,7 +82,8 @@ require("packer").startup(function()
 
     use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 
-    use("b0o/SchemaStore.nvim")
+    use("b0o/SchemaStore.nvim")             -- JSON schemas
+    use("saecki/crates.nvim")               -- Rust crates
 
     -- prettier
     use({ "prettier/vim-prettier",
@@ -132,6 +133,7 @@ require("Comment").setup()
 -- works like tabs but better
 vim.opt.statusline = " %{%v:lua.require'statusline'.gen()%} "
 
+-- language config
 require("c")
 require("rust")
 require("go")
